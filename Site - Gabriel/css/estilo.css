@@ -1,0 +1,142 @@
+/* Formatação geral */
+body{
+    font-family: 'Playfair Display', serif;
+	font-family: 'Quicksand', sans-serif;
+	font-family: 'Jost', sans-serif;
+}
+h1, h2, h3{
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
+}
+p{
+    font-family: 'Quicksand', sans-serif;
+}
+.container{
+	width: 100%;
+}
+
+/* Cabeçalho ou barra de navegação */
+.logo img{
+	border-radius: 48%;
+}	
+
+nav{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #4B0082;
+	padding: 10px;
+}
+nav ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+}
+nav ul li{
+	text-align: center;
+    width: 75%;
+    font-size:1.5em;
+    padding: 2%;
+}
+nav ul li a{
+	display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #ffff;
+}
+/* header */
+header{
+	background-image:url(../img/back.jpg);
+	background-size:cover; 
+	background-position: center;
+    background-repeat: no-repeat;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px
+
+}
+header p{
+	margin-bottom: 2em;
+    font-size: 2
+}
+.botao{
+	color: #ffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #4B0082;
+    font-size: 1em;
+    border-radius: 5% 
+}
+
+/* sobre */
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #4B0082;
+    color: #ffff    
+}
+#sobre h2{
+	margin-top: 0px;
+	font-size: 2em;
+	font-family: 'Playfair Display', serif;
+}
+.foto img{
+	width: 60%
+}
+.foto{
+	float: left;
+	width: 50%
+}
+.texto{
+	font-family: 'Indie Flower', 'Shadows Into Light', cursive;
+	float: right;
+	width: 50%
+}
+@media screen and (min-width: 768px){
+    /*Cabeçalho*/
+    nav{	
+	    flex-direction: row;
+	    justify-content: space-around;
+    }
+    nav ul{
+	    flex-direction: row;
+	    width: 80%
+	    justify-content: space-around;
+    }
+}
+/* header */
+header{
+
+	height: 60vh;
+	justify-content: center;
+
+}
+
+/* sobre */
+#sobre{
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	height: 90vh;
+	justify-content: center;
+	min-height: 80vh; 
+}
+#sobre h2{
+	text-align: center;
+	width: 100%
+}
+#sobre div{
+	flex-grow:1;
+	flex-basis: 300px;
+	padding: 0 10px;  
+}
