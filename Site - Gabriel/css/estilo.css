@@ -102,18 +102,6 @@ header p{
 	float: right;
 	width: 50%
 }
-@media screen and (min-width: 768px){
-    /*Cabeçalho*/
-    nav{	
-	    flex-direction: row;
-	    justify-content: space-around;
-    }
-    nav ul{
-	    flex-direction: row;
-	    width: 80%
-	    justify-content: space-around;
-    }
-}
 /* header */
 header{
 
@@ -139,4 +127,126 @@ header{
 	flex-grow:1;
 	flex-basis: 300px;
 	padding: 0 10px;  
+}
+
+#especialidades{
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	margin: 0 auto;
+}
+#especialidades div{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+}
+#especialidades p{
+	line-height: 1.5;
+	margin: 2vh;
+	font-size: 1.1em;
+}
+#especialidades img{
+	margin: 10px 0;
+}
+#especialidades h2{
+	font-size: 3em;
+	font-family: 'Playfair Display', serif;
+}
+#competencias{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 20px;
+margin-left: 20px;
+margin-right: 20px;
+}
+#competencias h2{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 2em;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+}
+#competencias h3{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 1em;
+	text-align: center;
+}
+#competencias p{
+	margin-bottom: 20px;
+	margin-top: 10px;
+	font-size: 1em;
+	text-align: center;
+}
+#competencias a{
+	text-decoration: none;
+}
+#competencias img{
+	width: 100%
+	margin-bottom: 5px;
+}
+#competencias .comp p{
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	border-radius: 1%;
+	margin-top: 0;
+	font-family: 'Raleway', sans-serif;
+	padding-right: 15px;
+	padding-left: 15px;
+	line-height: 1.5;
+}
+
+
+@media screen and (min-width: 768px){
+    /*Cabeçalho*/
+    nav{	
+	    flex-direction: row;
+	    justify-content: space-around;
+    }
+    nav ul{
+	    flex-direction: row;
+	    width: 80%
+	    justify-content: space-around;
+    }
+}
+
+#especialidades{
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+#especialidades h2{
+	text-align: center;
+	width: 100%
+}
+#especialidades div{
+	flex-grow: 1;
+	flex-basis: 125px;
+	padding: 0 10px; 
+	font-family: 'Raleway', sans-serif;
+	padding-left: 15px;
+	padding-right: 15px;
+	line-height: 1.5;
+}
+#competencias{
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+#competencias h2,h3 {
+	width: 100%;
+	text-align: center;
+}
+#competencias .comp{
+	width: 30%;
+	text-align: center;
+	margin-left: 1.5%;
+	margin-right: 1.5%;
 }
